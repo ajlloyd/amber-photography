@@ -1,0 +1,61 @@
+@import "./variables.module.scss";
+
+
+
+.container{
+    
+    width: 100vw;
+    margin-bottom: 5%;
+    position: fixed;
+    top: 0px;
+    z-index: 9999;
+    background-color: rgb(243, 243, 243);
+    @include flexBox(row);
+    justify-content: space-between;
+
+    .iconContainer{
+        @include flexBox(row);
+        width: 33%;
+        .icon{
+            margin: 10px;
+            font-size: 30px;
+            &:hover{
+                @include basicTextHover
+            }
+        }
+    }
+    .image{
+        width: 33%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+            scale: 1.1;
+            cursor: pointer;
+            filter: brightness(0%);
+            transition: ease-in 0.2s;
+        }
+    }
+    .textBox{
+        width: 33%;
+        margin-right: 20px;
+        @include flexBox(row);
+        justify-content: right;
+        //flex-wrap: wrap;
+        h1{
+            padding: 20px;
+            font-size: calc(15px + 0.2vw);
+            &:hover{
+                @include basicTextHover
+            }
+        }
+    }
+}
+
+
+#about{
+    color: rgb(163, 163, 163);
+    &:hover{
+        @include basicTextHover
+    }
+}

@@ -1,0 +1,25 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+@mixin flexBox($direction) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+}
+
+@mixin basicTextHover {
+    scale: 1.1;
+    cursor: pointer;
+    color: rgb(190, 190, 190);
+    transition: ease-in .2s;
+    box-shadow: black;
+    
+}
+
+
+@mixin LoraFont($size) {
+    font-family: 'Lora', serif;
+    color: rgb(141, 141, 141);
+    font-size: $size;
+    
+}

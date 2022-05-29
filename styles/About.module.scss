@@ -1,0 +1,39 @@
+
+@import "./variables.module.scss";
+
+
+.container{
+    padding: 150px 100px 50px 100px;
+    height: 90vh;
+    background-color: white;
+
+    .aboutContainer{
+        padding: 0 15% 0% 15%;
+        align-self: center;
+
+        h1{
+            margin-bottom: 15px;
+        }
+
+        .imageWithText{
+            display: flex;
+            justify-content: center;
+            .image{
+                max-height: 500px;
+            }
+            .text{
+                @include LoraFont(14.6px);
+                width: 35%;
+                margin: 0px 50px 0px 50px;
+            }
+        }
+    }
+
+    footer{
+        padding: 5%;
+        small{
+            @include flexBox(column);
+            @include LoraFont(12.6px)
+        }
+    }
+}
